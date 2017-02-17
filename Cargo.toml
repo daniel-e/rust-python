@@ -1,0 +1,13 @@
+[package]
+name = "python-rust-example"
+version = "0.1.0"
+authors = ["de"]
+
+[lib]
+name = "example"
+crate-type = ["dylib"]
+
+[dependencies.cpython]
+git = "https://github.com/dgrunwald/rust-cpython.git"
+default-features = false
+features = ["python27-sys"]
